@@ -16,9 +16,14 @@ with open(r'C:\Users\rkeenan\OneDrive - Aurora Cooperative\Documents\Development
         FOUR_INCH_SOIL_TEMP = listOfData[5]
         INCOMING_SOLAR_RADIATION = listOfData[6]
         WIND_SPEED = listOfData[7]
-        WIND_GUST = None
+        WIND_GUST = "Null"
         WIND_DIRECTION = listOfData[8]
         MEAN_SEA_LEVEL_PRESSUE = listOfData[9]
         HEAT_INDEX = listOfData[10]
         WINDCHILL_TEMPERATURE = listOfData[11]
         HOURLY_PRECIPITATION = listOfData[12]
+        with open(r'C:\Users\rkeenan\OneDrive - Aurora Cooperative\Documents\Development\NE Mesonet Missing Data 2020\ross_keenan_202007-08(fixed).csv', 'a') as writeFile:
+            writeFile.write(LOCATION + '\t' + VALID_TIME + '\t' + TEMPERATURE + '\t' + DEW_POINT + '\t' + RELATIVE_HUMIDITY + '\t' + FOUR_INCH_SOIL_TEMP + '\t' + INCOMING_SOLAR_RADIATION +
+                            '\t' + WIND_SPEED + '\t' + WIND_GUST + '\t' + WIND_DIRECTION + '\t' + MEAN_SEA_LEVEL_PRESSUE + '\t' + HOURLY_PRECIPITATION + '\t' + HEAT_INDEX + '\t' + WINDCHILL_TEMPERATURE + '\n')
+
+print('Your write file is finished!')
