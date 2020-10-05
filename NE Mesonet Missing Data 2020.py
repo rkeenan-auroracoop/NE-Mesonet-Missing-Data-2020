@@ -1,13 +1,13 @@
 
 
+locationDictionary = {}
+
 with open(r'C:\Users\rkeenan\OneDrive - Aurora Cooperative\Documents\Development\NE Mesonet Missing Data 2020\ross_keenan_202007-08.csv') as readFile:
     with open(r'C:\Users\rkeenan\OneDrive - Aurora Cooperative\Documents\Development\NE Mesonet Missing Data 2020\ross_keenan_202007-08(fixed).csv', 'w') as writeFile:
         writeFile.write('Name' + '\t' + 'Valid_time' + '\t' + 'Temperature' + '\t' + 'Dewpoint' + '\t' + 'Relative_Humidity' +
                         '\t' + '4inch_Soil_Temperature' + '\t' + 'Incoming_Solar_Radiation' + '\t' + 'Wind_Speed' + '\t' + 'Wind_Gust' + '\t' + 'Wind_Direction' + '\t' + 'Mean_Sea_Level_Pressure' + '\t' + 'Hourly_Precipitation' + '\t' + 'Heat_Index' + '\t' + 'Wind_Chill' + '\n')
     for line in readFile:
-        # print(line)
         listOfData = line.split(",")
-        # print(listOfData)
         LOCATION = listOfData[0]
         VALID_TIME = listOfData[1]
         TEMPERATURE = listOfData[2]
