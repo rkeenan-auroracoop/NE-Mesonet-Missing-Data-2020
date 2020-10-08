@@ -1,4 +1,3 @@
-Name,Valid time,Temperature,Dewpoint,Relative Humidity,4inch Soil Temperature,Incoming Solar Radiation,Wind Speed,Wind Direction,Mean Sea Level Pressure,Heat Index,Windchill Temperature,Hourly Precipitation
 Ainsworth 2NE,2020-07-22 11:00:00 CDT,74°F,65°F,72%,82°F,720W/m^2,10MPH,S,1015mb,,,0.00"
 Alda 3W,2020-07-22 11:00:00 CDT,73°F,67°F,81%,76°F,258W/m^2,6MPH,SSE,1016mb,,,0.01"
 Alliance 6NW,2020-07-22 10:00:00 MDT,73°F,61°F,65%,72°F,687W/m^2,11MPH,SSE,1011mb,,,0.00"
