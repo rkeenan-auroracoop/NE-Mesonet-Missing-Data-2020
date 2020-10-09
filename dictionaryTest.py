@@ -15,13 +15,9 @@ testDictionary = {"Ainsworth 2NE": "Ainsworth 2NE (AKA Ainsworth)"}
 
 thisList = ['Ainsworth 2NE']
 
-
 for key, value in testDictionary.items():
-    # print(key)
-    # print(value)
     for item in thisList:
         Ratio = fuzz.ratio(item.lower(), key.lower())
-        # Ratio2 = fuzz.ratio(item.lower(), value.lower())
         print(Ratio)
         if Ratio > 80:
             item = value
